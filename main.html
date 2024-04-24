@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI时代 | 首页</title>
+    <link rel="icon" href="imgs/main/icons8-cortana-144.png">
+    <style>
+        *
+        {
+            font-family:微软雅黑;
+            color:#ffffff;
+        }
+        .container
+        {
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+        }
+        .container2
+        {
+            display: flex;
+            flex-direction:row;
+            justify-content: center;
+            margin-top: 230px;
+        }
+        .box
+        {
+            height:360px;
+            width:1920px;
+            overflow: hidden;
+        }
+        ul
+        {
+            list-style: none;
+            overflow: hidden;
+            float:left;
+            margin: 0;
+            padding:0;
+            height: 60px;
+            width: 100%;
+            text-align: center;
+            background-color:rgba(33, 33, 33, 0.5);
+            backdrop-filter: blur(30px);
+            position: fixed;
+            top:0px;
+            left:0px;
+            z-index: 100;
+            
+        }
+        li
+        {
+            display:inline-block;
+            text-decoration: none;
+        }
+        li a
+        {
+            float:left;
+            text-decoration: none;
+            transition:all 0.3s;  
+            padding:18px 16px;
+        }
+        li a:hover
+        {
+             
+            transform: scale(1.2);
+        }
+        html
+        {
+           background-image: url(imgs/main/bg.png);
+            background-attachment: fixed;
+            background-position: center;
+            background-size:cover;
+        }
+        .p
+        {
+            background-color:rgba(33, 33,33, 0.5);
+            backdrop-filter: blur(35px); 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            left:45px;
+            margin: 35px;
+            padding:40px 0px;            
+            border-radius: 35px;
+            height:300px;
+            width: 380px;
+            text-align: center;
+            transition: 0.5s;
+            align-items: center;
+        }
+        #name
+        {
+            font-size: 25px;
+            font-weight: bolder;
+            line-height: 2ch;
+            height:70px;
+        }
+        .p:hover
+        {
+            transform: scale(1.09);
+        }
+        .p a
+       {
+            color:#4572fa;
+            text-decoration: none;
+       }
+        .p a:hover
+       {
+            color:#4572fa;
+            text-decoration: underline;
+       } 
+        .p a:active 
+       {
+            color:#02df82;
+            text-decoration: underline;
+       }
+        .head
+        {
+            justify-content: center;
+            display:inline-block;
+            background-color:rgba(33, 33, 33, 0.5);
+            backdrop-filter: blur(35px);
+            height:600px;
+            width: 1300px;
+            z-index: 80;
+            margin:80px auto;
+            border-radius: 20px;
+        }
+        .b
+        {
+            justify-content: center;
+            display:inline-block;
+            width: 1400px;
+            z-index: 80;
+            left:0px;
+            right: 0px;
+            top:20px;
+            margin:20px auto;
+        }
+        .b1
+        {
+            height:520px;
+            width: 630px;
+            float:left;
+            margin:0px auto;
+            position: relative;
+            left:50px;
+            background-color:rgba(33, 33, 33, 0.5);
+            backdrop-filter: blur(35px);
+            border-radius: 20px;
+            transition: all 0.5s;
+        }
+        .b2
+        {
+            height: 240px;
+            width:650px;
+            float:right;
+            margin:0px 50px auto;
+            background-color:rgba(33, 33, 33, 0.5);
+            backdrop-filter: blur(35px);
+            border-radius: 20px;
+            transition: all 0.5s;
+        }
+        .b3
+        {
+            height: 240px;
+            width:650px;
+            float:right;
+            margin:35px 50px auto;
+            background-color:rgba(33, 33, 33, 0.5);
+            backdrop-filter: blur(35px);
+            border-radius: 20px;
+            transition: all 0.5s;
+        }
+        .text
+        {
+            height:220px;
+            width:395px;
+            float:right;
+            position:relative;
+            top:0px;
+            right:20px;
+        }
+        .text a
+       {
+            color:#4572fa;
+            text-decoration: none;
+       }
+        .text a:hover
+       {
+            color:#4572fa;
+            text-decoration: underline;
+       } 
+        .text a:active 
+       {
+            color:#02df82;
+            text-decoration: underline;
+       }
+        .b1:hover
+        {
+            transform: scale(1.04);
+        }
+        .b2:hover
+        {
+            transform: scale(1.04);
+        }
+        .b3:hover
+        {
+            transform: scale(1.04);
+        }
+        .b2 img
+        {
+            margin: 20px;
+        }
+        .h
+        {
+            display: inline-block;
+            width:1440px;
+            position: relative;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            top: 130px;
+            margin: auto;
+            bottom: 30px;
+            font-weight: bolder;
+            text-align: center;
+            font-size: 50px;
+        }
+        .container3
+        {
+            display: flex;
+            flex-direction: column;  
+            margin-bottom:0px;
+            align-items: center;
+        }
+        .box2
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            height:80px;
+            width:90%;
+            background-color: rgba(33, 33, 33, 0.5);
+            backdrop-filter:blur(35px);
+            border-radius:20px;
+            text-align: center;
+        }
+        .box2 a
+       {
+            color:#4572fa;
+            display: block;
+            margin-top:20px;
+            align-items: center;
+            text-decoration: none;
+       }
+       .box2 a:hover
+       {
+            color:#4572fa;
+            text-decoration: underline;
+       } 
+       .box2 a:active 
+       {
+            color:#02df82;
+            text-decoration: underline;
+       }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="main.html" target="_self">首页</a></li>
+        <li><a href="xxdy.html" target="_self">详细定义</a></li>
+        <li><a href="fzlc.html" target="_self">发展历程</a></li>
+        <li><a href="yjjz.html" target="_self">研究价值</a></li>
+        <li><a href="xgzz.html" target="_self">相关著作</a></li>
+        <li><a href="gywm.html" target="_self">关于我们</a></li>
+    </ul>
+    <div class="container">
+    <div class="head">
+        <h1 style="font-size:100px;font-weight: bold;position: absolute;bottom:240px;margin: 20px;">
+            AI时代
+        </h1>
+        <p style="font-size:40px;position:absolute;bottom:160px;margin: 20px;">
+            The age of Artificial Intelligence
+        </p>
+        <img src="imgs/main/icons8-microsoft-cortana-560.png" align="right">
+    </div>
+    <div class="b">
+        <div class="b1">
+            <br>
+            <h1 style="margin: 20px;line-height: 2ch;font-size:50px; font-weight: bolder;">
+                初露锋芒：AI在今天能帮我们做什么？
+            </h1>
+            <hr color="#ffffff" size="5px" style="margin: 20px;">
+            <p style="font-size:20px;margin:20px;line-height: 3ch;">
+                人工智能是一种能够让机器模拟人类智能的技术，
+                它可以在各个领域和场景中提高人类的效率、质量和创造力。在当今的数字化时代，
+                写作和编程是两项重要的技能，它们可以帮助我们表达思想、解决问题、创造价值。但是，
+                写作和编程也不是一件容易的事情，它们需要大量的时间、精力和专业知识。有没有一种方法，
+                可以让我们在写作和编程方面得到更好的帮助和支持呢？
+                答案是肯定的，
+                那就是Microsoft 365 Copilot 和GitHub Copilot X。
+            </p>
+        </div>
+        <div class="b2">
+            <img src="imgs/main/Microsoft_365_(2022).svg" height="200" width="200">
+        <div class="text">
+            <h1 style="margin:20px">
+                Microsoft 365 Copilot
+            </h1>
+            <p style="margin:20px; font-size: 17px;">
+                新的 Microsoft 365 Copilot 体验可与你一起工作，
+                嵌入到你每天使用的应用
+                （Word、Excel、PowerPoint、Outlook、Teams、Loop 等）中。
+                它能将大型语言模型的强大功能与业务数据和上下文相结合。
+                <a href="365.html" target="_blank">了解更多</a></p>
+        </div>
+        </div>
+        <div class="b3">
+            <img src="imgs/main/copilot-logo-large.svg" height="220" width="200" style="margin:15px">
+            <div class="text">
+                <h1 style="margin:20px">
+                    GitHub Copilot X
+                </h1>
+                <p style="margin:20px; font-size: 17px;">
+                    凭借聊天和终端界面、对拉取请求的支持以及 OpenAI GPT-4 的早期采用，
+                    GitHub Copilot X 是我们对人工智能软件开发未来的愿景。
+                    集成到工作流程的每个部分。
+                    <a href="github.html" target="_blank">了解更多</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="h">
+           点击以体验最新AI
+    </div>
+</div>
+<div class="container2">
+    <div class="p"><br>
+        <img src="imgs/main/bing.png" height="100" width="100">
+        <br><br><p id="name">
+            New Bing
+        </p>
+        <br>微软推出的基于GPT4模型的智能搜索引擎
+        <a href="https://www.bing.com/new?toWww=1&redig=F1361AA4360B4FE4AAB67FA78EB0F69D" target="_blank">
+            <br>立即体验
+        </a>
+         </div>
+    <div class="p"><br>
+            <img src="imgs/main/ChatGPT-Logo.png" height="100" width="100">
+            <br><br><p1 id="name">
+                Chat GPT
+            </p1>
+            <br><br>由Open AI开发的语言模型
+            <br><br><a href="https://openai.com/blog/chatgpt" target="_blank">
+                立即体验
+            </a>
+    </div>
+    <div class="p"><br>
+            <img src="imgs/main/wenxin.png" height="100" width="100">
+            <br><br><p1 id="name">
+                文心一言
+            </p1>
+            <br><br>百度全新一代知识增强大语言模型
+            <br><br><a href="https://yiyan.baidu.com/welcome" target="_blank">
+                立即体验
+            </a>
+    </div>
+    </div> 
+<div class="container3">
+    <div class="box2">
+        <p style="display: block;margin-top:20px;">&copy;Cherish&nbsp;&nbsp;&nbsp;&nbsp;|</p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="jrwm.html">加入我们</a>
+    </div>
+</div>
+</body>
+</html>

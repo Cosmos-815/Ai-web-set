@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Copilot X</title>
+    <link rel="icon" href="imgs/main/icons8-cortana-144.png">
+    <style>
+         *
+        {
+            font-family:微软雅黑;
+            color:#ffffff;
+        }
+        html
+        {
+            background-image: url(imgs/github/gh.png);
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+         ul
+        {
+            list-style: none;
+            overflow: hidden;
+            float:left;
+            margin: 0;
+            padding:0;
+            height: 60px;
+            width: 100%;
+            text-align: center;
+            background-color:rgba(33, 33, 33, 0.5);
+            backdrop-filter: blur(30px);
+            position: fixed;
+            top:0px;
+            left:0px;
+            z-index: 100;
+            
+        }
+        li
+        {
+            display:inline-block;
+            text-decoration: none;
+        }
+        li a
+        {
+            float:left;
+            text-decoration: none;
+            transition:all 0.3s;
+            padding:18px 16px;
+        }
+        li a:hover
+        {
+            transform: scale(1.2);
+        }
+        .container 
+        {  
+            display: flex;  
+            flex-direction: column;  
+            align-items: center;
+            width:1300px;
+            height:2100px;
+            background-color:rgba(33, 33, 33, 0.5);
+            backdrop-filter: blur(35px);
+            margin:100px auto;
+            border-radius: 20px;
+        }
+        .box1
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .box2
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        video
+        {
+            width: 960px;
+            height:540px;
+            display: flex;
+            justify-content: center;
+            border-radius: 20px;
+            margin-top:80px;
+        }
+        .text
+        {
+            width:900px;
+            height:400px;
+        }
+        .text2
+        {
+            width:90%;
+            height:fit-content;
+            font-size: 25px;
+        }
+        img
+        {
+            width:250px;
+            height:250px;
+            transition: all 0.8s;
+        }
+        img:hover
+        {
+            transform: scale(1.2);
+        }
+        .container2
+        {
+            display: flex;
+            flex-direction: column;  
+            margin-bottom:0px;
+            align-items: center;
+            margin-top:90px;
+        }
+        .box3
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            height:80px;
+            width:90%;
+            background-color: rgba(33, 33, 33, 0.5);
+            backdrop-filter:blur(35px);
+            border-radius:20px;
+            text-align: center;
+        }
+        .box3 a
+       {
+            color:#4572fa;
+            display: block;
+            margin-top:20px;
+            align-items: center;
+            text-decoration: none;
+       }
+       .box3 a:hover
+       {
+            color:#4572fa;
+            text-decoration: underline;
+       } 
+       .box3 a:active 
+       {
+            color:#02df82;
+            text-decoration: underline;
+       }
+       .text2 a
+       {
+            color:#4572fa;
+            text-decoration: none;
+       }
+       .text2 a:hover
+       {
+            color:#4572fa;
+            text-decoration: underline;
+       } 
+       .text2 a:active 
+       {
+            color:#02df82;
+            text-decoration: underline;
+       }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="main.html" target="_self">首页</a></li>
+        <li><a href="xxdy.html" target="_self">详细定义</a></li>
+        <li><a href="fzlc.html" target="_self">发展历程</a></li>
+        <li><a href="yjjz.html" target="_self">研究价值</a></li>
+        <li><a href="xgzz.html" target="_self">相关著作</a></li>
+        <li><a href="gywm.html" target="_self">关于我们</a></li>
+    </ul>
+    <div class="container">
+            <h1>GitHub Copilot X</h1>
+        <hr color="#ffffff" width="90%" size="5px" style="margin:20px">
+        <div class="box2">
+            <img src="imgs/github/copilot-logo-large.svg">
+            <div class="text">
+                <h1 style="font-size:60px; margin-left:50px;margin-top: 80px;"> GitHub Copilot X—— 您的 AI 配对程序员</h1>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="text2">
+                GitHub Copilot 是一个 AI 对程序员，可帮助您更快地编写代码，
+                减少工作量。它从注释和代码中提取上下文，以立即建议单个行和整个函数。
+                GitHub Copilot由OpenAI Codex提供支持，OpenAI Codex是由OpenAI创建的生成式预训练语言模型。
+                它可作为Visual Studio Code，Visual Studio，Neovim和JetBrains集成开发环境（IDE）套件的扩展。
+            </div>
+        </div>
+        <video src="media/GitHub Copilot X/videoplayback.mp4" controls></video>
+        <br><br>
+        <h1>步入新的编程时代</h1>
+        <div class="box1">
+            <div class="text2">
+                GitHub Copilot由Codex提供支持，
+                Codex是由OpenAI创建的生成预训练AI模型。它已经接受了来自公开来源的自然语言文本和源代码的训练，
+                包括 GitHub 上公共存储库中的代码。在最近的一项评估中，
+                我们发现用户平均接受了 GitHub Copilot 显示的所有完成次数的 26%。我们还发现，
+                平均超过27%的开发人员代码文件是由GitHub Copilot生成的，在某些语言中，如Python，这一比例高达40%。但是，
+                GitHub Copilot 并没有编写完美的代码。它旨在根据它有权访问的上下文生成可能的最佳代码，但它不会测试它建议的代码，
+                因此代码可能并不总是有效，甚至没有意义。GitHub Copilot 只能保存非常有限的上下文，
+                因此它可能无法使用项目中其他位置甚至同一文件中定义的有用函数。它可能会暗示库和语言的旧用法或已弃用法。
+                将用非英语编写的注释转换为代码时，
+                与英语相比可能存在性能差异。对于建议的代码，与其他编程语言相比，某些语言（如 Python、JavaScript、TypeScript 和 Go）的性能可能更好。
+                与任何其他代码一样，GitHub Copilot 建议的代码应经过仔细测试、审查和审查。作为开发人员，它随时为您所用。
+            </div>
+        </div> 
+        <h1>客户如何充分利用 GitHub Copilot X？</h1>
+        <div class="box1">
+            <div class="text2">
+                通过使用 GitHub Copilot 并在反馈论坛中分享您的反馈，您可以帮助改进 GitHub Copilot。还请直接向 <a href="https://github.com/features/copilot " target="_blank">copilot-safety@github.com </a>报告事件
+                （例如，攻击性输出、代码漏洞、代码生成中的明显个人信息），
+                以便我们改进保护措施。GitHub 非常重视安全和保障，我们致力于不断改进。
+            </div>
+        </div> 
+    </div>
+    <div class="container2">
+        <div class="box3">
+            <p style="display: block;margin-top:20px;">&copy;Cherish&nbsp;&nbsp;&nbsp;&nbsp;|</p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="jrwm.html">加入我们</a>
+        </div>
+    </div>
+</body>
+</html>
